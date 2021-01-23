@@ -1,0 +1,19 @@
+@import "mixin";
+.container {
+    padding: 0.01em 16px 0 180px;
+    .Card {
+        background-color: #fff;
+        border: 1px solid #cacaca;
+        box-shadow: 10px 10px 5px grey;
+        @include grid(5 , 2%);  
+        img {
+            width: 100%;
+        }
+        .card-content {
+            padding: 10px;
+            .heading {
+                font-weight: bold;
+            }
+        }
+    }
+}
